@@ -11,4 +11,11 @@ class Bond(Base):
     start = Column(String)
     end = Column(String)
 
-    
+class Signup(Base):
+    __tablename__ = "sign_up"
+    id = Column(Integer, primary_key=True, index=True)
+    email = Column(String, index=True)
+    password = Column(String, index=True)
+    fullName = Column(String)
+    phoneNumber = Column(String)
+       
